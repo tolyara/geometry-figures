@@ -34,7 +34,8 @@ public class Circle implements Figure {
 
 	@Override
 	public String toString() {
-		return "[Figure: circle, square = " + getSquare() + ", radius = " + radius + ", colour = " + colour + "]";
+		return "[Figure: circle, square = " + DECIMAL_FORMAT.format(getSquare()) + ", radius = "
+				+ DECIMAL_FORMAT.format(radius) + ", colour = " + colour + "]";
 	}
 
 }

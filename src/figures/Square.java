@@ -1,7 +1,7 @@
 package figures;
 
 public class Square implements Figure {
-	
+
 	private String colour;
 
 	private double side;
@@ -25,14 +25,15 @@ public class Square implements Figure {
 	public String getColour() {
 		return colour;
 	}
-	
+
 	public double getSide() {
 		return side;
 	}
 
 	@Override
 	public String toString() {
-		return "[Figure: square, square = " + getSquare() + ", side = " + side + ", colour = " + colour + "]";
+		return "[Figure: square, square = " + DECIMAL_FORMAT.format(getSquare()) + ", side = "
+				+ DECIMAL_FORMAT.format(side) + ", colour = " + colour + "]";
 	}
 
 }

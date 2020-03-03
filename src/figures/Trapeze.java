@@ -7,7 +7,7 @@ public class Trapeze implements Figure {
 	private double firstBase;
 
 	private double secondBase;
-	
+
 	private double height;
 
 	public Trapeze(String colour, double firstBase, double secondBase, double height) {
@@ -31,14 +31,15 @@ public class Trapeze implements Figure {
 	public String getColour() {
 		return colour;
 	}
-	
+
 	public double getHeight() {
 		return height;
 	}
 
 	@Override
 	public String toString() {
-		return "[Figure: trapeze, square = " + getSquare() + ", height = " + height + ", colour = " + colour + "]";
+		return "[Figure: trapeze, square = " + DECIMAL_FORMAT.format(getSquare()) + ", height = "
+				+ DECIMAL_FORMAT.format(height) + ", colour = " + colour + "]";
 	}
 
 }
